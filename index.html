@@ -1,1 +1,43 @@
- <h1>Hello World!</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple Style Site</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+        body { background-color: #fff; color: #1d1d1f; }
+        
+        /* Transparent Nav Bar */
+        nav { background: rgba(0, 0, 0, 0.8); backdrop-filter: blur(10px); height: 44px; position: fixed; width: 100%; top: 0; z-index: 1000; display: flex; justify-content: center; align-items: center; }
+        nav a { color: #f5f5f7; text-decoration: none; font-size: 12px; margin: 0 15px; opacity: 0.8; }
+        nav a:hover { opacity: 1; }
+
+        /* Hero Section */
+        .hero { height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding-top: 44px; background: #fbfbfd; }
+        .hero h1 { font-size: 56px; font-weight: 600; }
+        .hero p { font-size: 28px; margin-top: 6px; }
+        .cta { margin-top: 15px; }
+        .cta a { color: #0066cc; text-decoration: none; font-size: 21px; margin: 0 15px; }
+        .cta a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#">Store</a>
+        <a href="#">Mac</a>
+        <a href="#">iPad</a>
+        <a href="#">iPhone</a>
+        <a href="#">Watch</a>
+    </nav>
+
+    <section class="hero">
+        <h1>iPhone 15 Pro</h1>
+        <p>Titanium. So strong. So light. So Pro.</p>
+        <div class="cta">
+            <a href="#">Learn more ></a>
+            <a href="#">Buy ></a>
+        </div>
+    </section>
+</body>
+</html>
